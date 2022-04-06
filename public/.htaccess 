@@ -1,0 +1,5 @@
+ErrorDocument 404 /404.html
+
+SetEnv TZ Asia/Jakarta
+SetEnv SERVER_ADMIN admin@otsee.eu.org
+RewriteRule ^(.*)(de|es|fr|it|ja|ru|id|en)/$ - [co=lang:$2:.askapache.com:7200:/]

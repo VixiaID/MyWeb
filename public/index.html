@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/mwl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+      <img class="icon" src="/img/otsee.png">
+      <h1 class="name">OTSEE</h1>
+      <p class="desc">Always Happy 💙</p>
+      </div>
+      <div class="about">
+        <p class="git">
+          <i class="fab fa-github"></i><a href="https://github.com/VixiaID" target="_blank" class="gn">VixiaID</a>
+        </p>
+        <p class="tele">
+          <i class="fab fa-telegram"></i><a href="https://t.me/Xotsee" target="_blank" class="tn">Xotsee</a>
+        </p>
+        <p class="mail">
+          <i class="fas fa-envelope"></i><a href="mailto:admin@otsee.eu.org" target="_blank" class="mn">admin@otsee.eu.org</a>
+        </p>
+      </div>
+      <footer>
+        <div class="ftr">
+          Made with <span class='love'>❤️</span> by <p class="dmn" id="domains">OTSEE</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+       let text = "OTSEE";
+       let domain = window.location.href;
+       let result = text.link(domain);
+       document.getElementById("domains").innerHTML = result;
+       $(document).ready(function() {
+          $('body').bind('cut copy', function(e) {
+              e.preventDefault();
+            });
+        });
+        $(document).ready(function() {
+          $("body").on("contextmenu", function(e) {
+              return false;
+            });
+        });
+   </script>
+  </body>
+</html>
